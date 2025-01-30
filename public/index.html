@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Layers App</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="controls">
+        <div id="layer-controls">
+            <input type="text" id="layer-name" placeholder="Layer name">
+            <button id="add-layer">Add Layer</button>
+            <select id="layer-select">
+                <option value="">Select Layer</option>
+            </select>
+        </div>
+        <div id="marker-controls">
+            <input type="text" id="marker-label" placeholder="Marker label">
+            <button id="add-marker">Add Marker</button>
+            <button id="remove-marker">Remove Marker</button>
+            <button id="measure-distance">Measure Distance</button>
+        </div>
+    </div>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="/js/map.js"></script>
+</body>
+</html> 

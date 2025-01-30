@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#controls {
+    padding: 10px;
+    background: #f8f9fa;
+}
+
+#map {
+    flex-grow: 1;
+    width: 100%;
+}
+
+#layer-controls, #marker-controls {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px;
+    margin: 0 5px;
+}
+
+input, select {
+    padding: 8px;
+    margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+    #controls {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    button, input, select {
+        margin: 5px 0;
+        width: 100%;
+    }
+} 
